@@ -26,18 +26,18 @@ Ensure the following are installed on your system before starting:
 | Java (OpenJDK) | 1.8.0+ |
 | Python | 3.10+ |
 
-Install Python3 if not installed:
+**Install Python3 if not installed:**
 
 ```bash
 sudo apt install python3-pip python3-dev
 ```
-Install java if not installed:
+**Install java if not installed:**
 
 ```bash
 sudo apt install openjdk-8-jdk -y
 ```
 
-Verify installations:
+**Verify installations:**
 
 ```bash
 java -version
