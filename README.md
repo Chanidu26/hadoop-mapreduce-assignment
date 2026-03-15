@@ -323,7 +323,7 @@ File Output Format Counters → Bytes Written=664
 hdfs dfs -cat /sales_output/part-00000
 ```
 
-Sample output (Region_Product → Total Sales):
+Expected Output (Region_Product → Total Sales):
 ```
 East_Beauty         14756513.0
 East_Books          42636631.0
@@ -332,9 +332,26 @@ East_Electronics    87601533.0
 East_Food           42971693.0
 East_Health         29200281.0
 East_Home           14503949.0
+
 North_Beauty         9372531.0
 North_Books         29170898.0
-...
+North_Clothing      37793334.0
+North_Electronics   58051610.0
+North_Food          28782699.0
+North_Health        19669329.0
+North_Home           9833620.0
+
+South_Beauty        10015411.0
+South_Books         28711482.0
+South_Clothing      38763855.0
+South_Electronics   57430883.0
+South_Food          28875354.0
+South_Health        19608124.0
+South_Home          10274994.0
+
+West_Beauty         14802623.0
+West_Books          42655554.0
+West_Clothing       58525472.0
 West_Electronics    86623277.0
 West_Food           42698299.0
 West_Health         28814051.0
