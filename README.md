@@ -185,7 +185,11 @@ You should see the HDFS Overview page showing `localhost:9000` as **active**.
 
 ## Step 3 — Download Dataset & Upload to HDFS
 
-**3.1 Download the dataset (`customer_data.csv`) from Google Drive:**
+**3.1 Upload Dataset CSV file to Google Drive:**
+
+![Drive Upload Screenshot](pics/drive-upload.png)
+
+**3.2 Download the dataset (`customer_data.csv`) from Google Drive:**
 
 ```bash
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=<YOUR_FILE_ID>' -O customer_data.csv
@@ -193,19 +197,19 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=<YOUR
 
 > The dataset is a 7.6 MB CSV file containing customer purchase records with columns for Region, Product Category, and Purchase Amount.
 
-**3.2 Create a directory in HDFS:**
+**3.3 Create a directory in HDFS:**
 
 ```bash
 hdfs dfs -mkdir /sales_input
 ```
 
-**3.3 Upload the dataset to HDFS:**
+**3.4 Upload the dataset to HDFS:**
 
 ```bash
 hdfs dfs -put customer_data.csv /sales_input
 ```
 
-**3.4 Verify the upload:**
+**3.5 Verify the upload:**
 
 ```bash
 hdfs dfs -ls /sales_input
@@ -343,7 +347,10 @@ Navigate to:
 ```
 http://localhost:9870/explorer.html
 ```
+![hadoop view Screenshot](pics/hadoop-view.png)
 
 You will see both `sales_input` and `sales_output` directories listed in the HDFS browser.
+
+![hadoop view Screenshot](pics/hadoop-dir-view.png)
 
 ---
